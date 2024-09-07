@@ -1,18 +1,24 @@
-import { TChallengeList } from "../../entities/challenge/challenge.model";
+import { useGetChallengeList } from "../../features/challenge/challengeList.hook";
 import ChallengesWithLevel from "./ChallengesWithLevel";
 
-const ChallengeList = ({ data }: TChallengeList) => {
+const ChallengeList = () => {
+	const { data: challengeList, isLoading: isLoadingGetChallengeList } = useGetChallengeList();
+	if (isLoadingGetChallengeList) {
+		return <div>Loading...</div>;
+	}
+
 	return (
 		<div className="flex flex-col gap-5">
-			{data.map(({ categoryName, challenges }) => {
-				return (
-					<ChallengesWithLevel
-						key={categoryName}
-						categoryName={categoryName}
-						challenges={challenges}
-					/>
-				);
-			})}
+			{challengeList &&
+				challengeList.map(({ categoryName, challenges }) => {
+					return (
+						<ChallengesWithLevel
+							key={categoryName}
+							categoryName={categoryName}
+							challenges={challenges}
+						/>
+					);
+				})}
 		</div>
 	);
 };
