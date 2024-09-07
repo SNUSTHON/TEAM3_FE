@@ -457,7 +457,6 @@ html {
   margin: 0 auto;
   min-height: 100vh;
   font-family: "Pretendard";
-  /* padding: 32px; */
 }
 
 *, ::before, ::after {
@@ -847,6 +846,10 @@ html {
   margin-bottom: 1.25rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-px {
   margin-bottom: 1px;
 }
@@ -1010,8 +1013,16 @@ html {
   height: 2px;
 }
 
+.h-\[80px\] {
+  height: 80px;
+}
+
 .h-\[calc\(100dvh_-_var\(--navbar-height\)\)\] {
   height: calc(100dvh - var(--navbar-height));
+}
+
+.h-\[calc\(100vh-80px\)\] {
+  height: calc(100vh - 80px);
 }
 
 .h-\[var\(--navbar-height\)\] {
@@ -1697,6 +1708,10 @@ html {
 
 .gap-1\.5 {
   gap: 0.375rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-2 {
@@ -2455,6 +2470,11 @@ html {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-\[60px\] {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .py-0 {
