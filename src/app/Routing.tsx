@@ -8,6 +8,7 @@ const Routing = () => {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<TodayPage />} />
+				<Route path="/today" element={<TodayPage />} />
 				<Route path="/login" element={<LoginPage />} />
 				<Route path="/history" element={<HistoryPage />} />
 			</Routes>
