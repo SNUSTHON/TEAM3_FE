@@ -1,6 +1,7 @@
 import { Checkbox } from "@nextui-org/checkbox";
 import { TChallengeSetting } from "../../entities/user/challenge.model";
 import checkIcon from "../../assets/check.svg";
+import { cn } from "@nextui-org/theme";
 
 const Challenge = ({ categoryName, isSelected }: TChallengeSetting) => {
 	return (
@@ -9,7 +10,10 @@ const Challenge = ({ categoryName, isSelected }: TChallengeSetting) => {
 			className="w-full"
 			classNames={{
 				icon: "hidden",
-				label: "w-full max-w-full p-4 group-data-[selected=true]:bg-primary-50 group-data-[selected=true]:border-none rounded-xl flex justify-between items-center border border-default",
+				label: cn(
+					"w-full max-w-full p-4 rounded-xl flex justify-between items-center border border-default",
+					isSelected ? "bg-primary-50 border-none" : "border-default"
+				),
 				base: "w-full max-w-full",
 				wrapper: "hidden",
 			}}
