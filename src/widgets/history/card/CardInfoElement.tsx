@@ -1,15 +1,7 @@
-type CardInfoProps = {
-	label: string;
-	value: string;
-};
+import { PropsWithChildren } from "react";
 
-const CardInfoElement = ({ label, value }: CardInfoProps) => {
-	return (
-		<div className="flex flex-col items-center justify-center">
-			<h4 className="">{label}</h4>
-			<h6 className="">{value}</h6>
-		</div>
-	);
+const CardInfoElement = ({ children }: PropsWithChildren) => {
+	return <div className="w-full flex items-center justify-center">{children}</div>;
 };
 
 export default CardInfoElement;

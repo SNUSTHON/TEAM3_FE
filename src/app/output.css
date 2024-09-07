@@ -839,6 +839,10 @@ html {
   margin-bottom: 0.5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -873,10 +877,6 @@ html {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 
 .box-border {
@@ -1161,6 +1161,10 @@ html {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-\[2px\] {
+  width: 2px;
 }
 
 .w-\[80\%\] {
@@ -2601,6 +2605,11 @@ html {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-\[0\.55rem\] {
@@ -7142,11 +7151,6 @@ html {
 .group[data-invalid="true"] .group-data-\[invalid\=true\]\:bg-danger-50 {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--nextui-danger-50) / var(--nextui-danger-50-opacity, var(--tw-bg-opacity)));
-}
-
-.group[data-selected="false"] .group-data-\[selected\=false\]\:bg-default-50 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--nextui-default-50) / var(--nextui-default-50-opacity, var(--tw-bg-opacity)));
 }
 
 .group[data-selected="true"] .group-data-\[selected\=true\]\:bg-danger {
