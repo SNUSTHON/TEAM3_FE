@@ -1,4 +1,4 @@
-import { DayHistoryList } from "../../entities/day/day.model";
+import { DayHistoryList } from "../../../entities/day/day.model";
 
 export const mockCounts: DayHistoryList = [
 	{

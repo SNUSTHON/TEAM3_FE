@@ -7,3 +7,6 @@ export type DayHistory = {
 };
 
 export type DayHistoryList = DayHistory[];
+export type DayHistoryListResponse = {
+	data: DayHistoryList;
+};

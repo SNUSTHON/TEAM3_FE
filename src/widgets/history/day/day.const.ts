@@ -18,6 +18,6 @@ export const dayVariants = cva("text-md font-medium rounded-lg p-0", {
 	},
 });
 
-const startDate = "2024-08-05";
-const endDate = "2024-09-08";
+export const startDate = "2024-08-05";
+export const endDate = "2024-09-08";
 export const dateList = getDateRange(startDate, endDate);
