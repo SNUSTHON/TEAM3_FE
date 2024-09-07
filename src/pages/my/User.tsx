@@ -7,7 +7,7 @@ const User = ({ username }: UserProps) => {
 	return (
 		<div className="flex flex-col items-center gap-4">
 			<img src={userImage} alt="avatar" width={125} height={125} />
-			<h3>{username}</h3>
+			<h3 className="font-extrabold text-base">{username}</h3>
 		</div>
 	);
 };
