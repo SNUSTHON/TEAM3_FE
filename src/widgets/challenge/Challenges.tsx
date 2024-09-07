@@ -7,7 +7,7 @@ type ChallengesProps = {
 
 const Challenges = ({ challenges }: ChallengesProps) => {
 	return (
-		<div className="flex flex-col gap-5">
+		<div className="flex flex-col gap-5 w-full">
 			{challenges.map((challenge) => (
 				<Challenge key={challenge.memberChallengesId} {...challenge} />
 			))}

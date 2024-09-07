@@ -6,12 +6,23 @@ const Challenge = ({ challengeName, categoryName, duration, isDone }: ChallengeP
 	const [isSelected, setIsSelected] = useState(isDone);
 
 	return (
-		<Checkbox isSelected={isSelected} onValueChange={setIsSelected} className="flex">
-			<div className="flex flex-col">
-				<h3 className="text-default-900">{challengeName}</h3>
-				<h6>{categoryName}</h6>
+		<Checkbox
+			isSelected={isSelected}
+			onValueChange={setIsSelected}
+			className="w-full max-w-full"
+			classNames={{
+				label: "w-full",
+			}}
+		>
+			<div className="flex w-full">
+				<div className="flex flex-col w-full gap-1">
+					<h3 className="text-default-900 text-sm font-bold">{challengeName}</h3>
+					<h6 className="text-default-600 text-xs font-medium">{categoryName}</h6>
+				</div>
+				<h6 className="text-default-900 font-medium text-xs flex items-baseline gap-1">
+					<span className="font-extrabold text-2xl">{duration}</span>min
+				</h6>
 			</div>
-			<h6>{duration} min</h6>
 		</Checkbox>
 	);
 };
