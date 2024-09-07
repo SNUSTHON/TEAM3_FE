@@ -1,5 +1,4 @@
 import { Button } from "@nextui-org/react";
-import googleLogo from "../../assets/google.svg";
 import { setAccessToken } from "../../features/auth/accessToken";
 import { Link } from "react-router-dom";
 
@@ -14,16 +13,10 @@ const GoogleLoginButton = () => {
 		<div>
 			<Link to="/">
 				<Button
-					startContent={
-						<img
-							src={googleLogo}
-							alt="Google Login"
-							style={{ width: "20px", height: "20px" }}
-						/>
-					}
 					onClick={login}
+					className="w-full bg-primary-500 text-white fixed bottom-[20px] left-0"
 				>
-					구글로 시작하기
+					로그인
 				</Button>
 			</Link>
 		</div>
