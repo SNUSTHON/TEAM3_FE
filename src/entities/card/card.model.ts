@@ -7,7 +7,7 @@ export type TCard = {
 	level: TLevel;
 	categoryName: CategoryName;
 	duration: Duration;
-	status: Status;
+	isDone: Status;
 };
 
 export type TCardList = TCard[];
