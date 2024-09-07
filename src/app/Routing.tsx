@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LoginPage from "../../login/Page";
-import TodayPage from "../../today/Page";
+import LoginPage from "../pages/login/Page";
+import TodayPage from "../pages/today/Page";
 
 const Routing = () => {
 	return (

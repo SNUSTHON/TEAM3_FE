@@ -1,5 +1,5 @@
 import { Button } from "@nextui-org/react";
-import googleLogo from "../assets/google.svg";
+import googleLogo from "../../assets/google.svg";
 
 const GoogleLoginButton = () => {
 	return (

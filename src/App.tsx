@@ -1,4 +1,4 @@
-import Routing from "./common/routes/Routing";
+import Routing from "./app/Routing";
 
 function App() {
 	return <Routing />;
