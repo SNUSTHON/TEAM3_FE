@@ -1,4 +1,4 @@
-import DayList from "../../widgets/history/DayList";
+import DayList from "../../widgets/history/day/DayList";
 import HeatMap from "./HeatMap";
 import WeekList from "./WeekList";
 
