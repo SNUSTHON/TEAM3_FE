@@ -9,7 +9,7 @@ export const dayVariants = cva("text-md font-medium rounded-lg p-0", {
 			2: "bg-primary-100 text-default-900",
 			3: "bg-primary-200 text-default-900",
 			4: "bg-primary-300 text-white",
-			5: "bg-primary-400 text-white",
+			5: "bg-primary-500 text-white",
 		},
 		isSelected: {
 			true: "bg-default-900 text-white",
