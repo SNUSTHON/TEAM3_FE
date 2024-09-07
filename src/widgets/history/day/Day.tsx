@@ -1,8 +1,9 @@
 import { Button } from "@nextui-org/button";
 import { useGetCount } from "./day.hook";
 import { Count, TDay } from "./day.type";
-import { getDayFromDate } from "./day.util";
+import { getDayFromDate, getUrlWithSelectedDay } from "./day.util";
 import { dayVariants } from "./day.const";
+import { Link } from "react-router-dom";
 
 const Day = ({ createdAt, isSelected }: TDay) => {
 	const count: Count = useGetCount(createdAt);
@@ -10,7 +11,7 @@ const Day = ({ createdAt, isSelected }: TDay) => {
 
 	return (
 		<Button className={dayVariants({ count, isSelected })} isIconOnly>
-			{day}
+			<Link to={getUrlWithSelectedDay(createdAt)}>{day}</Link>
 		</Button>
 	);
 };
