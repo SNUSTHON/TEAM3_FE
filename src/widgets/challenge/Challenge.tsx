@@ -1,14 +1,18 @@
 import { Checkbox } from "@nextui-org/react";
-import { useState } from "react";
 import { ChallengeProps } from "../../entities/challenge/challenge.model";
+import { usePostChangeChallenge } from "../../features/challenge/challengeList.hook";
 
-const Challenge = ({ challengeName, level, duration, isDone }: ChallengeProps) => {
-	const [isSelected, setIsSelected] = useState(isDone);
+const Challenge = ({ challengeName, level, duration, done, memberChallengesId }: ChallengeProps) => {
+	const { mutate } = usePostChangeChallenge();
+
+	const handleChange = (done: boolean) => {
+		mutate({ challengeId: memberChallengesId, isDone: done });
+	};
 
 	return (
 		<Checkbox
-			isSelected={isSelected}
-			onValueChange={setIsSelected}
+			isSelected={done}
+			onValueChange={handleChange}
 			className="w-full max-w-full bg-primary-50 p-4 rounded-2xl m-0"
 			classNames={{
 				label: "w-full",

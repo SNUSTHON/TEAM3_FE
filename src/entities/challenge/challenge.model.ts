@@ -20,7 +20,7 @@ export type ChallengeProps = {
 	challengeName: ChallengeName;
 	level: TLevel;
 	duration: Duration;
-	isDone: IsDone;
+	done: IsDone;
 };
 
 export type TChallenges = ChallengeProps[];
