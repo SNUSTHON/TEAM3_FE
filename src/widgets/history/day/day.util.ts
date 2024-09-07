@@ -1,4 +1,4 @@
-import { CreatedAt } from "../../entities/day/day.model";
+import { CreatedAt } from "../../../entities/day/day.model";
 
 export const getDayFromDate = (createdAt: CreatedAt) => {
 	const date = new Date(createdAt);
