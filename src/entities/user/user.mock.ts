@@ -5,5 +5,5 @@ export const mockUser: TUser = {
 	username: "김신영",
 	email: "lukey0515@gmail.con",
 	profileImageUrl: "",
-	sponsorProgress: 1,
+	sponsorProgress: 60,
 };
