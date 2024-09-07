@@ -21,3 +21,7 @@ export function getDateRange(startDate: string, endDate: string): string[] {
 export const getUrlWithSelectedDay = (createdAt: CreatedAt): string => {
 	return `/history?createdAt=${createdAt}`;
 };
+
+export const isSelectedDay = (createdAt: CreatedAt, selectedDate: CreatedAt): boolean => {
+	return createdAt === selectedDate;
+};
