@@ -6,8 +6,8 @@ type LevelProps = {
 
 const Level = ({ level }: LevelProps) => {
 	return (
-		<h2>
-			Lv. <span>{level}</span>
+		<h2 className="text-default-900 font-bold text-xs">
+			Lv. <span className="text-2xl">{level}</span>
 		</h2>
 	);
 };

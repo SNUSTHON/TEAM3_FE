@@ -457,6 +457,7 @@ html {
   margin: 0 auto;
   min-height: 100vh;
   font-family: "Pretendard";
+  padding: 32px;
 }
 
 *, ::before, ::after {
@@ -1613,6 +1614,10 @@ html {
   place-content: center;
 }
 
+.content-between {
+  align-content: space-between;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1762,10 +1767,6 @@ html {
 
 .break-words {
   overflow-wrap: break-word;
-}
-
-.break-all {
-  word-break: break-all;
 }
 
 .break-keep {
@@ -2382,11 +2383,6 @@ html {
   padding-right: 1.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -2579,6 +2575,11 @@ html {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -2593,6 +2594,10 @@ html {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .tabular-nums {
