@@ -10,4 +10,7 @@
 		min-height: 100vh;
 		font-family: "Pretendard";
 	}
+	.custom-toast-container {
+		bottom: 90px !important;
+	}
 }

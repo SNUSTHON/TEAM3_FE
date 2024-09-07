@@ -459,6 +459,10 @@ html {
   font-family: "Pretendard";
 }
 
+.custom-toast-container {
+  bottom: 90px !important;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -7054,10 +7058,6 @@ html {
   align-items: flex-end;
 }
 
-.group[data-selected="true"] .group-data-\[selected\=true\]\:border-none {
-  border-style: none;
-}
-
 .group[data-focus="true"] .group-data-\[focus\=true\]\:\!border-danger {
   --tw-border-opacity: 1 !important;
   border-color: hsl(var(--nextui-danger) / var(--nextui-danger-opacity, var(--tw-border-opacity))) !important;
@@ -7186,11 +7186,6 @@ html {
 .group[data-selected="true"] .group-data-\[selected\=true\]\:bg-primary {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-bg-opacity)));
-}
-
-.group[data-selected="true"] .group-data-\[selected\=true\]\:bg-primary-50 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--nextui-primary-50) / var(--nextui-primary-50-opacity, var(--tw-bg-opacity)));
 }
 
 .group[data-selected="true"] .group-data-\[selected\=true\]\:bg-secondary {
