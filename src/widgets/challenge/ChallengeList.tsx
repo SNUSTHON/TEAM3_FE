@@ -4,8 +4,14 @@ import ChallengesWithLevel from "./ChallengesWithLevel";
 const ChallengeList = ({ data }: TChallengeList) => {
 	return (
 		<div className="flex flex-col gap-5">
-			{data.map(({ level, challenges }) => {
-				return <ChallengesWithLevel key={level} level={level} challenges={challenges} />;
+			{data.map(({ categoryName, challenges }) => {
+				return (
+					<ChallengesWithLevel
+						key={categoryName}
+						categoryName={categoryName}
+						challenges={challenges}
+					/>
+				);
 			})}
 		</div>
 	);

@@ -1,4 +1,5 @@
 export type TLevel = number;
+export type TCategoryName = string;
 
 export type MemberChallengesId = number;
 export type ChallengeName = string;
@@ -9,7 +10,7 @@ export type IsDone = boolean;
 export type ChallengeProps = {
 	memberChallengesId: MemberChallengesId;
 	challengeName: ChallengeName;
-	categoryName: CategoryName;
+	level: TLevel;
 	duration: Duration;
 	isDone: IsDone;
 };
@@ -17,7 +18,7 @@ export type ChallengeProps = {
 export type TChallenges = ChallengeProps[];
 
 export type ChallengeListByLevel = {
-	level: TLevel;
+	categoryName: TCategoryName;
 	challenges: TChallenges;
 };
 

@@ -1,15 +1,11 @@
-import { TLevel } from "../../entities/challenge/challenge.model";
+import { TCategoryName } from "../../entities/challenge/challenge.model";
 
 type LevelProps = {
-	level: TLevel;
+	categoryName: TCategoryName;
 };
 
-const Level = ({ level }: LevelProps) => {
-	return (
-		<h2 className="text-default-900 font-bold text-xs">
-			Lv. <span className="text-2xl">{level}</span>
-		</h2>
-	);
+const Level = ({ categoryName }: LevelProps) => {
+	return <h2 className="text-default-900 font-bold text-2xl">{categoryName}</h2>;
 };
 
 export default Level;
