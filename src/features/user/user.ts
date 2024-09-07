@@ -49,6 +49,7 @@ export const postUserCategoryList = async ({ categoryIds }: PostUserCategoryList
 	const response = await fetch(url, {
 		headers: {
 			Authorization: `Bearer ${accessToken}`,
+			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({ categoryIds }),
 		method: "POST",
