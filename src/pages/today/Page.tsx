@@ -1,5 +1,12 @@
+import { mockPhrase } from "../../entities/phrase/phrase.mock";
+import Phrase from "./Phrase";
+
 const TodayPage = () => {
-	return <div>메인 페이지</div>;
+	return (
+		<div>
+			<Phrase {...mockPhrase} />
+		</div>
+	);
 };
 
 export default TodayPage;
