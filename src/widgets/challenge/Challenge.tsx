@@ -9,7 +9,7 @@ const Challenge = ({ challengeName, level, duration, isDone }: ChallengeProps) =
 		<Checkbox
 			isSelected={isSelected}
 			onValueChange={setIsSelected}
-			className="w-full max-w-full bg-primary-50 p-4 rounded-2xl"
+			className="w-full max-w-full bg-primary-50 p-4 rounded-2xl m-0"
 			classNames={{
 				label: "w-full",
 				icon: "before:border-white",
