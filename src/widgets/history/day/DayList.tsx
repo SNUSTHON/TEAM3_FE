@@ -1,11 +1,10 @@
-import { useSearchParams } from "react-router-dom";
 import Day from "./Day";
 import { dateList } from "./day.const";
 import { isSelectedDay } from "./day.util";
+import { useGetSelectedDate } from "./day.hook";
 
 const DayList = () => {
-	const [searchParam] = useSearchParams();
-	const selectedDay = searchParam.get("createdAt") ?? "2024-09-08";
+	const selectedDay = useGetSelectedDate();
 
 	return (
 		<div className="grid grid-cols-7 w-full gap-1">
