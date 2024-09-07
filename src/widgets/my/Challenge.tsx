@@ -3,7 +3,7 @@ import { TChallengeSetting } from "../../entities/user/challenge.model";
 import checkIcon from "../../assets/check.svg";
 import { cn } from "@nextui-org/theme";
 
-const Challenge = ({ categoryName, isSelected }: TChallengeSetting) => {
+const Challenge = ({ categoryName, selected: isSelected }: TChallengeSetting) => {
 	return (
 		<Checkbox
 			isSelected={isSelected}

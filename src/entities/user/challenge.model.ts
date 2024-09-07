@@ -6,7 +6,7 @@ export type IsSelected = boolean;
 export type TChallengeSetting = {
 	categoryId: CategoryId;
 	categoryName: CategoryName;
-	isSelected: IsSelected;
+	selected: IsSelected;
 };
 
 export type TChallengeSettingList = TChallengeSetting[];
