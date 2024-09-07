@@ -1,5 +1,7 @@
+import Routing from "./common/routes/Routing";
+
 function App() {
-	return <>무한 도전 페이지입니다.</>;
+	return <Routing />;
 }
 
 export default App;
