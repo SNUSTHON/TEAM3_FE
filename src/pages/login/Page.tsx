@@ -1,7 +1,11 @@
 import GoogleLoginButton from "./GoogleLoginButton";
 
 const LoginPage = () => {
-	return <GoogleLoginButton />;
+	return (
+		<div>
+			<GoogleLoginButton />
+		</div>
+	);
 };
 
 export default LoginPage;
